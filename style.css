@@ -1,51 +1,50 @@
 * {
-    font-family: "Roboto Mono", monospace;
+  font-family: "Roboto Mono", monospace;
 }
 b {
-    font-weight: 700;
-    font-size: 1.2em;
+  font-weight: 700;
+  font-size: 1.2em;
 }
-ol{
-    padding: 0 50px;
+ol {
+  padding: 0 50px;
 }
 .container {
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 .text,
 .image {
-    display: block;
-    margin: 0 auto;
-    max-height: 100vh;
-    max-width: 100vw;
+  display: block;
+  margin: 0 auto;
+  max-height: 100vh;
+  max-width: 100vw;
 }
 .text h1 {
-    font-weight: 700;
-    font-size: 5em;
-    text-align: center;
+  font-weight: 700;
+  font-size: 5em;
+  text-align: center;
 }
 .page2 {
-    background-color: rgb(26, 26, 28);
+  background-color: rgb(26, 26, 28);
 }
-.page4{ 
-    background-color: rgb(20  , 15, 17);
+.page4 {
+  background-color: rgb(20, 15, 17);
 }
-.page4 > img{
-    max-width: 33vw;
-    opacity: 0;
-} 
-iframe{
-    width: 100%;
-    max-width: 400px;
-    height: 400px;
+.page4 > img {
+  max-width: 33vw;
+  opacity: 0;
 }
-.longIf{
-    margin: 0 30%;
-
+iframe {
+  width: 100%;
+  max-width: 400px;
+  height: 400px;
 }
-.ab2{
-    max-width: 480px;
+.longIf {
+  margin: 0 30%;
+}
+.ab2 {
+  max-width: 480px;
 }
 /* .text{
     display: grid;
@@ -63,39 +62,73 @@ iframe{
 .text > iframe{
     grid-area: playlist;
 } */
-section.quotation{
-    background-color: rgb(20  , 15, 17);
-    color: #ffffff;
+section.quotation {
+  background-color: rgb(20, 15, 17);
+  color: #ffffff;
+  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+    -1px 1px 0 #000, 1px 1px 0 #000;
 }
-article.quotation > h1{
-    font-size: 2.5em;
-    font-weight: 700;
-    font-style: italic;
+article.quotation > h1,
+article.credits > h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  text-align: center;
+  font-style: italic;
 }
-section.quotation{
-    background-position: center center;
+article.credits > h1 {
+  font-size: 4em;
 }
-.page6{
-    background-image: url('./img/bg5.jpg');
-    
+
+section.credits {
+  background-color: black;
+  text-align: center;
+  color: #ffffff;
 }
-.page8{
-    background-image: url('./img/bg1.jpg');
+
+section.credits a,
+p.source {
+  color: #ffffff;
+  font-size: 1.5em;
 }
-.page10{
-    background-image: url('./img/bg2.jpg');
+section.credits a:hover {
+  color: blue;
 }
-.page12{
-    background-image: url('./img/bg4.jpg');
+section.quotation {
+  background-position: center center;
 }
-.page14{
-    text-align: center;
-    background-image: url('./img/bg10.jpg');
+.page6 {
+  background-image: url("./img/bg5.jpg");
 }
-.page14>article>h1{
-    color: rgb(255, 115, 0);
+.page8 {
+  background-image: url("./img/bg1.jpg");
 }
-.page16{
-    text-align: center;
-    background-image: url('./img/bg9.jpg');
+.page10 {
+  background-image: url("./img/bg2.jpg");
+}
+.page12 {
+  background-image: url("./img/bg4.jpg");
+}
+.page14 {
+  background-image: url("./img/bg10.jpg");
+}
+.page14 > article > h1 {
+  color: rgb(255, 115, 0);
+}
+.page16 {
+  background-image: url("./img/bg9.jpg");
+}
+@media only screen and (max-width: 1000px) {
+  .longIf {
+    margin: 0;
+  }
+  .ab2 {
+    max-width: 300px;
+    width: 100%;
+  }
+  .page17 > article {
+    margin: 0 10%;
+  }
+  .text{
+      margin: 0 5%;
+  }
 }
